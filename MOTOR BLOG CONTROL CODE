@@ -1,0 +1,12 @@
+int p=10,n=11;
+void setup(){
+  pinMode(p,OUTPUT);
+    pinMode(n,OUTPUT);
+}
+void loop(){
+  analogWrite(p,240);//255 output is maximum =5v
+  analogWrite(n,0);// 0 output voltage is lowest 
+  delay (2000);
+  analogWrite(p,0);
+  analogWrite(n,240);// (240/255)*5=4.70v
+  delay (2000); }
